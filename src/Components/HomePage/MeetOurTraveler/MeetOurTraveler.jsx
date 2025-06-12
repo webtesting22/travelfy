@@ -28,7 +28,7 @@ const MeetOurTraveler = () => {
                     </div>
                 </Col>
                 <Col xs={24} md={12} className="meet-traveler-content-col">
-                    <h2 className="hero-home-title meet-traveler-title">Meet Our Travelers</h2>
+                    <h2 className="hero-home-title">Meet Our Travelers</h2>
                     <div className="meet-traveler-subheading">Real Experiences</div>
                     <p className="meet-traveler-description">
                         Hear from our past travelers and discover how our tailored journeys have transformed their vacations into unforgettable adventures. Their stories will inspire you to embark on your own transformative travel experience.

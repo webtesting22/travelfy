@@ -4,8 +4,9 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <footer className="footer-section" id="contact">
-            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/089d5ff82ef4727ac00124bede3e666be6739622.png" alt="footer background" className="footer-bg-img" />
+            
             <div className="footer-overlay">
+            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/089d5ff82ef4727ac00124bede3e666be6739622.png" alt="footer background" className="footer-bg-img" />
                 <div className="footer-content">
                     <div className="footer-col footer-logo-col">
                         <img src="/Images/TravelfyLogo.png" alt="Travelfy Logo" className="footer-logo" />

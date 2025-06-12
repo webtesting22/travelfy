@@ -67,7 +67,7 @@ const YourJourney = () => {
       />
       <div className="your-journey-overlay">
         <div className="your-journey-content">
-          <h1 className="your-journey-title">Elevate Your Journey</h1>
+          <h1 className="hero-home-title">Elevate Your Journey</h1>
           <p className="your-journey-subtitle">
             Craft unforgettable moments in the world's most extraordinary places
           </p>

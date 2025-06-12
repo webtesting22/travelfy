@@ -11,3 +11,13 @@ p, .about-description, .meet-traveler-description, .offerings-subtitle, .feature
   font-family: 'Poppins', sans-serif !important;
 }
 
+
+.commonHeading{
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

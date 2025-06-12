@@ -32,7 +32,7 @@ const OurOfferings = () => {
 
     return (
         <section className="offerings-section" id="offerings" ref={sectionRef}>
-            <h2 className="offerings-title">Our Offerings</h2>
+            <h2 className="commonHeading">Our Offerings</h2>
             <p className="offerings-subtitle">Discover the world's most captivating destinations</p>
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <Row gutter={[32, 32]} justify="center" className="offerings-row">

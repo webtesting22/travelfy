@@ -86,7 +86,7 @@
 
 @media (max-width: 600px) {
   .discover-story-section {
-    height: 32vh;
+    height: 50vh;
     min-height: 180px;
     padding: 1.2rem 0.2rem;
   }
