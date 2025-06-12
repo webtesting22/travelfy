@@ -5,9 +5,9 @@ const HeroHome = () => {
     return (
         <div className="hero-home-container">
             {/* Animated floating images */}
-            <img className="hero-home-img plane" src="https://cdn-icons-png.flaticon.com/512/69/69906.png" alt="plane" />
+            {/* <img className="hero-home-img plane" src="https://cdn-icons-png.flaticon.com/512/69/69906.png" alt="plane" />
             <img className="hero-home-img globe" src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="globe" />
-            <img className="hero-home-img landmark" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="landmark" />
+            <img className="hero-home-img landmark" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="landmark" /> */}
             <div className="hero-home-overlay">
                 <div className="hero-home-content">
                     <h1 className="hero-home-title animated-title">

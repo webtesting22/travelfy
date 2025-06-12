@@ -1,0 +1,76 @@
+.trusted-partners-section {
+  width: 100vw;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/TrustedPartnerBanner.png') right center/cover no-repeat;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.trusted-partners-box {
+  background: #f8f3ee;
+  /* border: 3px solid #4bb1f7; */
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+  padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+  /* margin-left: 2.5vw; */
+  max-width: 540px;
+  min-width: 320px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.trusted-partners-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 1.2rem;
+  font-family: 'Georgia', serif;
+}
+
+.trusted-partners-description {
+  font-size: 1.15rem;
+  color: #6b6b6b;
+  font-family: 'Georgia', serif;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .trusted-partners-section {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 40vh;
+    background-position: center right;
+  }
+  .trusted-partners-box {
+    margin: 2.5vw auto;
+    max-width: 90vw;
+    min-width: unset;
+    padding: 2rem 1.2rem;
+  }
+  .trusted-partners-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .trusted-partners-section {
+    min-height: 30vh;
+    background-position: center right;
+  }
+  .trusted-partners-box {
+    padding: 1.2rem 0.7rem;
+    margin: 1vw auto;
+  }
+  .trusted-partners-heading {
+    font-size: 1.3rem;
+  }
+  .trusted-partners-description {
+    font-size: 1rem;
+  }
+}

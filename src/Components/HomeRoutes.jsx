@@ -4,6 +4,9 @@ import About from "./HomePage/About/About";
 import OurOfferings from "./HomePage/OurOfferings/OurOfferings";
 import FeaturedExperiences from "./HomePage/FeaturedExperiences/FeaturedExperiences";
 import YourJourney from "./HomePage/YourJourney/YourJourney";
+import TrustedPartners from "./HomePage/TrustedPartners/TrustedPartners";
+import MeetOurTraveler from "./HomePage/MeetOurTraveler/MeetOurTraveler";
+import DiscoverStory from "./HomePage/DiscoverStory/DiscoverStory";
 const HomeRoutes = () => {
     return (
         <div>
@@ -12,6 +15,9 @@ const HomeRoutes = () => {
             <OurOfferings/>
             <FeaturedExperiences/>
             <YourJourney/>
+            <TrustedPartners/>
+            <MeetOurTraveler/>
+            <DiscoverStory/>
         </div>
     )
 }

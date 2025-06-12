@@ -1,0 +1,99 @@
+.meet-traveler-section {
+  background: #fff;
+  padding: 3.5rem 1rem 3.5rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto 0rem auto;
+  border-radius: 18px;
+  /* box-shadow: 0 4px 24px rgba(0,0,0,0.04); */
+  display: block;
+  transition: box-shadow 0.3s;
+}
+
+.meet-traveler-img-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meet-traveler-img {
+  width: 100%;
+  /* max-width: 420px; */
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.meet-traveler-content-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding: 1.5rem 0;
+}
+
+.meet-traveler-title {
+  font-size: 2.7rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.meet-traveler-subheading {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+.meet-traveler-description {
+  font-size: 1.08rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2.2rem;
+  /* max-width: 480px; */
+}
+
+.meet-traveler-btn {
+  margin-top: 0.5rem;
+}
+
+/* Animation */
+.meet-traveler-section {
+  opacity: 0;
+  transform: translateY(60px) scale(0.97);
+  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animate-meet-traveler {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@media (max-width: 900px) {
+  .meet-traveler-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .meet-traveler-title {
+    font-size: 1.7rem;
+  }
+  .meet-traveler-section {
+    padding: 2rem 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .meet-traveler-section {
+    padding: 1.2rem 0.2rem;
+  }
+  .meet-traveler-title {
+    font-size: 1.2rem;
+  }
+  .meet-traveler-description {
+    font-size: 0.98rem;
+  }
+}
