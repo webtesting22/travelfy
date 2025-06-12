@@ -47,6 +47,7 @@
     align-items: flex-start;
     min-height: 40vh;
     background-position: center right;
+    justify-content: center;
   }
   .trusted-partners-box {
     margin: 2.5vw auto;
@@ -61,7 +62,7 @@
 
 @media (max-width: 600px) {
   .trusted-partners-section {
-    min-height: 30vh;
+    min-height: 50vh;
     background-position: center right;
   }
   .trusted-partners-box {

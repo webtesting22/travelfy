@@ -26,6 +26,7 @@
   opacity: 1;
   transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
 .your-journey-bg-img.fade-out {
   opacity: 0;
   transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
@@ -88,7 +89,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s, color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
   outline: none;
 }
 
@@ -111,16 +112,24 @@
   .your-journey-title {
     font-size: 2rem;
   }
+
   .your-journey-subtitle {
     font-size: 1rem;
   }
+
   .your-journey-actions {
     flex-direction: column;
     gap: 0.7rem;
+    width: 80%;
   }
+
   .your-journey-btn {
     width: 100%;
     padding: 0.9rem 0;
     font-size: 1rem;
+  }
+
+  .your-journey-section {
+    height: 100vh;
   }
 }
