@@ -1,0 +1,127 @@
+.featured-section {
+  background: #fcfcfc;
+  padding: 3.5rem 1rem 2.5rem 1rem;
+  text-align: center;
+}
+
+.featured-title {
+  font-size: 2.7rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.featured-subtitle {
+  font-size: 1.15rem;
+  color: #888;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featured-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+}
+
+.featured-card {
+  background: #fff;
+  border: 2px solid #DE8E52;
+  border-radius: 24px;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  min-width: 230px;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 270px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 12px rgba(222, 142, 82, 0.06);
+  margin-bottom: 1.2rem;
+}
+
+.featured-card:hover {
+  box-shadow: 0 8px 32px rgba(222, 142, 82, 0.18);
+  border-color: #ff8811;
+  transform: translateY(-8px) scale(1.04);
+}
+
+.featured-icon {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-card-title {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 0.4rem;
+}
+
+.featured-card-subtitle {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.featured-icon-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  /* background: #DE8E52; */
+  padding: 8px;
+}
+
+@media (max-width: 1100px) {
+  .featured-cards {
+    gap: 1.2rem;
+  }
+  .featured-card {
+    min-width: 180px;
+    max-width: 220px;
+    padding: 1.5rem 0.7rem 1.2rem 0.7rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .featured-cards {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+  .featured-card {
+    min-width: 140px;
+    max-width: 100%;
+    flex: 1 1 100%;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-title {
+    font-size: 1.5rem;
+  }
+  .featured-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .featured-card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1rem 0.2rem 0.7rem 0.2rem;
+  }
+}

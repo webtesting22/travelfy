@@ -1,0 +1,117 @@
+.your-journey-section {
+  width: 100vw;
+  height: 200vh;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.your-journey-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100vw; */
+  width: 100%;
+  /* height: 100vh; */
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.your-journey-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.your-journey-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.your-journey-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+}
+
+.your-journey-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  color: #f3f3f3;
+}
+
+.your-journey-actions {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.your-journey-btn {
+  background: #9b9b91;
+  color: #fff;
+  border: none;
+  border-radius: 28px;
+  padding: 1rem 2.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  outline: none;
+}
+
+.your-journey-btn:hover {
+  background: #7a7a6a;
+  color: #fff;
+}
+
+.your-journey-btn-primary {
+  background: #ff8811;
+  color: #fff;
+  font-weight: 700;
+}
+
+.your-journey-btn-primary:hover {
+  background: #ff6600;
+}
+
+@media (max-width: 700px) {
+  .your-journey-title {
+    font-size: 2rem;
+  }
+  .your-journey-subtitle {
+    font-size: 1rem;
+  }
+  .your-journey-actions {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .your-journey-btn {
+    width: 100%;
+    padding: 0.9rem 0;
+    font-size: 1rem;
+  }
+}

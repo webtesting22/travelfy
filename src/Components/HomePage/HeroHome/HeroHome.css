@@ -1,0 +1,173 @@
+.hero-home-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HeroHomeback.png') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Animated floating images */
+.hero-home-img {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.hero-home-img.plane {
+  width: 70px;
+  top: 12%;
+  left: 8%;
+  animation: planeFloat 6s ease-in-out infinite;
+}
+
+.hero-home-img.globe {
+  width: 80px;
+  top: 18%;
+  right: 10%;
+  animation: globeFloat 8s ease-in-out infinite;
+}
+
+.hero-home-img.landmark {
+  width: 60px;
+  bottom: 10%;
+  left: 18%;
+  animation: landmarkFloat 7s ease-in-out infinite;
+}
+
+@keyframes planeFloat {
+  0%, 100% { transform: translateY(0) rotate(-8deg); }
+  50% { transform: translateY(-24px) rotate(4deg); }
+}
+
+@keyframes globeFloat {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-22px) scale(1.09) rotate(8deg); }
+}
+
+@keyframes landmarkFloat {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(16px) scale(1.05); }
+}
+
+.hero-home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-home-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeInUp 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hero-home-title {
+  font-size: 4vw;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  /* Remove old animation for new word-by-word */
+}
+
+.animated-title span {
+  display: block;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: titleWordFadeIn 1.1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+.animated-title span:first-child {
+  animation-delay: 0.2s;
+}
+.animated-title span:last-child {
+  animation-delay: 0.7s;
+}
+
+@keyframes titleWordFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-home-subtext {
+  font-size: 1.5vw;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  color: #f3f3f3;
+  /* Remove old animation for new slide-in */
+}
+
+.animated-subtext {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: subtextSlideIn 1.2s 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes subtextSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-home-btn {
+  background: #ff8811;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 1rem 2.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  animation: popIn 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hero-home-btn:hover {
+  background: #ff6600;
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
