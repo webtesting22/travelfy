@@ -31,7 +31,7 @@ const OurOfferings = () => {
     }, []);
 
     return (
-        <section className="offerings-section" ref={sectionRef}>
+        <section className="offerings-section" id="offerings" ref={sectionRef}>
             <h2 className="offerings-title">Our Offerings</h2>
             <p className="offerings-subtitle">Discover the world's most captivating destinations</p>
             <div style={{ display: "flex", justifyContent: "center" }}>

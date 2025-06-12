@@ -18,11 +18,7 @@
 }
 
 .about-title {
-  font-size: 2rem;
-  font-style: italic;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 1.2rem;
+  composes: section-title;
 }
 
 .about-description {

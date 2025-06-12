@@ -55,11 +55,7 @@
 }
 
 .discover-story-title {
-  font-size: 2.7rem;
-  font-style: italic;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 1.5rem;
+  composes: section-title;
 }
 
 .discover-story-description {

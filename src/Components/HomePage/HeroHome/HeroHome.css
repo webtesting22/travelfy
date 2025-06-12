@@ -1,12 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 .hero-home-container {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HeroHomeback.png') center center/cover no-repeat;
+  /* background: url('https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/HeroHomeback.png') center center/cover no-repeat; */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.hero-home-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0;
+  animation: heroBgFadeIn 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  pointer-events: none;
+  user-select: none;
+  transition: opacity 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes heroBgFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-home-bg-video.visible {
+  opacity: 1;
+  transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hero-home-bg-video.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* Animated floating images */
@@ -77,11 +112,12 @@
 
 .hero-home-title {
   font-size: 60px;
-  font-weight: 700;
-  font-style: italic;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   letter-spacing: 1px;
+  text-transform: uppercase;
   /* Remove old animation for new word-by-word */
 }
 

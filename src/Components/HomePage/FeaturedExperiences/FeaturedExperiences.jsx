@@ -26,7 +26,7 @@ const features = [
 
 const FeaturedExperiences = () => {
     return (
-        <section className="featured-section">
+        <section className="featured-section" id="experiences">
             <h2 className="featured-title">Featured Experiences</h2>
             <p className="featured-subtitle">
                 Immerse yourself in the heart of each destination, with handpicked local experiences that showcase the true essence of the culture

@@ -22,6 +22,15 @@
   user-select: none;
 }
 
+.your-journey-bg-img.visible {
+  opacity: 1;
+  transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.your-journey-bg-img.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 .your-journey-overlay {
   position: absolute;
   top: 0;

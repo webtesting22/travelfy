@@ -35,11 +35,8 @@
 }
 
 .meet-traveler-title {
-  font-size: 2.7rem;
-  font-style: italic;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 0.5rem;
+  /* Use common section-title styles */
+  composes: section-title;
 }
 
 .meet-traveler-subheading {
