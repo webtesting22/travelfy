@@ -4,15 +4,15 @@ import "./OurOfferings.css";
 
 const offerings = [
     {
-        img: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OfferingCard1.png",
+        img: "/Images/Cards/1.png",
         name: "Place Name 1",
     },
     {
-        img: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OfferingCard2.png",
+        img: "/Images/Cards/2.png",
         name: "Place Name 2",
     },
     {
-        img: "https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/OfferingCard3.png",
+        img: "/Images/Cards/3.png",
         name: "Place Name 3",
     },
 ];
@@ -44,9 +44,9 @@ const OurOfferings = () => {
                                     alt={offering.name}
                                     className={`offering-img${inView ? " animate-img" : ""}`}
                                 />
-                                {/* <div className={`offering-place${inView ? " animate-place" : ""}`}>
+                                <div className={`offering-place${inView ? " animate-place" : ""}`}>
                                     {offering.name}
-                                </div> */}
+                                </div>
                             </div>
                         </Col>
                     ))}

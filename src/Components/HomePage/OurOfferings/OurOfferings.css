@@ -51,15 +51,19 @@
 
 .offering-place {
     position: absolute;
-    left: 50%;
-    bottom: 18px;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    left: 50px;
+    right: 50px;
+    bottom: 0px;
+    /* transform: translateX(-50%); */
     background: #f49b4d;
+    transform: translateY(100%);
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
-    border-radius: 18px;
+    border-radius: 18px 18px 0px 0px;
     padding: 0.7rem 2.5rem;
+    transition: .5s;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     opacity: 0.96;
     transition: background 0.3s, color 0.3s, transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.3s;
@@ -69,7 +73,9 @@
 .offering-card:hover .offering-place {
     background: #ff8811;
     color: #fff;
-    transform: translateX(-50%) scale(1.08) translateY(-8px);
+    transform: translateY(0%);
+    transition: .5s;
+    /* transform: translateX(-50%) scale(1.08) translateY(-8px); */
     opacity: 1;
 }
 
@@ -86,7 +92,7 @@
     animation: placeFadeIn 1.2s 0.7s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
-@keyframes cardFadeIn {
+/* @keyframes cardFadeIn {
     from {
         opacity: 0;
         transform: translateY(60px) scale(0.97);
@@ -120,11 +126,11 @@
         opacity: 0.96;
         transform: translateX(-50%) translateY(0) scale(1);
     }
-}
+} */
 
 @media (max-width: 900px) {
     .offering-img {
-        height: 270px;
+        height: 100%;
     }
 
     .offering-card {
@@ -133,21 +139,30 @@
 }
 
 @media (max-width: 600px) {
+    .offerings-section .ant-row .ant-col {
+     padding-left: 0px !important;
+     padding-right: 0px !important;
+    }
+
     .offerings-title {
         font-size: 1.5rem;
     }
 
-    .offering-img {
+    /* .offering-img {
         height: 180px;
-    }
+    } */
 
     .offering-place {
         font-size: 1rem;
         padding: 0.5rem 1.2rem;
-        bottom: 10px;
+        bottom: 0px;
     }
 
     .offering-card {
         min-height: 200px;
+    }
+
+    .offering-place {
+        transform: translateY(0%) !important;
     }
 }
